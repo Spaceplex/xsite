@@ -1,0 +1,98 @@
+.vid-container {    
+  position: fixed; /* added fixed to make sure it covers the whole screen*/
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden; /* prevents scrollbars if the video is slightly larger */
+  z-index: -1;
+}
+
+.vid-container:before{
+  content: '';
+  background: rgba(0, 0, 0, 0.5);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  object-fit: cover;
+  z-index: -1;
+}
+
+#bg-video{
+  content: '';
+  bottom: 0;
+  right: 0;
+  min-height: 100%;
+  min-width: 100%;
+  object-fit: cover;
+  z-index: -2;
+}
+
+#navbar {
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#pfp {
+  display: block;
+  width: 80px;
+}
+#pfp::before{
+  content: "";
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.capsulecontainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+button {
+}
+
+h1 {
+  color: White;
+}
+
+a {
+  cursor: pointer;
+}
+
+.capsule {
+  background-color: rgb(75, 75, 75);
+  border: solid;
+  border-color: White;
+  margin-right: 20px;
+  list-style: none;
+  display: inline-block;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+p {
+  background-color: None;
+  color: White;
+  font-size: 18px;
+}
+
+#content {
+  justify-content: center;
+}
+
+.socials {
+  background-color: rgb(75, 75, 75);
+  border: solid;
+  border-color: White;
+  background-size: auto;
+  text-align: center;
+  width: 50%;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+}
