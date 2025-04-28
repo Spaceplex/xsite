@@ -25,6 +25,7 @@ async fn index() -> Markup {
             }
             div id="navbar" {
                 div {
+                    h1 { "Spaceplex" }
                     img id="pfp" src="assets/vuWHRTzV_400x400.jpg" alt="" {}
                 }
                 div class="capsulecontainer"{
@@ -36,7 +37,7 @@ async fn index() -> Markup {
             }
             hr {}
             div id="content" {
-                p { "Home stuff over here :(" }
+                p { "Home stuff over here" }
             }
         }
     }

@@ -1,3 +1,10 @@
+@font-face {
+  font-family: 'Home Video Regular';
+  src: url('./HomeVideo-Regular.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 .vid-container {    
   position: fixed; /* added fixed to make sure it covers the whole screen*/
   top: 0;
@@ -41,6 +48,7 @@
 #pfp {
   display: block;
   width: 80px;
+  border-radius: 70%;
 }
 #pfp::before{
   content: "";
@@ -58,6 +66,7 @@ button {
 
 h1 {
   color: White;
+  font-family: "Home Video Regular";
 }
 
 a {
@@ -65,9 +74,10 @@ a {
 }
 
 .capsule {
-  background-color: rgb(75, 75, 75);
-  border: solid;
+  background-color: rgba(0, 0, 0, 0.4);
+  border: none;
   border-color: White;
+  border-radius: 20%;
   margin-right: 20px;
   list-style: none;
   display: inline-block;
@@ -86,9 +96,8 @@ p {
 }
 
 .socials {
-  background-color: rgb(75, 75, 75);
-  border: solid;
-  border-color: White;
+  background: rgba(0, 0, 0, 0.5);
+  border: none;
   background-size: auto;
   text-align: center;
   width: 50%;
